@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap');
+
+html {
+    font-size: 62, 5%;
+}
+
+:root {
+    --primary-color: #d05893;
+    --secundary-color: #ffe8f2;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffe8f2;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.containerWidth {
+    margin-top: 1rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.cardBackground {
+    background-color: #a3ffe7;
+}
+
+.secondCardBackground {
+    background-color: #ffa0cc;
+}
+
+.mainTitle {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.mainText {
+    text-align: center;
+}
+
+.cardsFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 1150px) {
+    .cardsFlex {
+        justify-content: center;
+    }
+}
+
+.card {
+    margin: 0.2rem;
+}
+
+.titulos {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.parrafos {
+    font-family: 'Dosis';
+    color: black;
+}
+
+.textos {
+    font-family: 'Dosis';
+}
+
+div .titulos {
+    font-size: 2rem;
+}
+
+div .parrafos {
+    font-size: 1rem;
+}
+
+.alternativeCard {
+    position: relative;
+    background-color: #e2a5c0;
+    border: #e93790 0.1rem solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+}
+
+.alternativeCard:hover {
+    background-color: #d8e583;
+    color: white;
+}
+
+.cards {
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .cardTexts .titulos {
+        font-size: 1rem;
+    }
+
+    .cardTexts .textos {
+        font-size: 0.7rem;
+    }
+
+    .cardsFlex .titulos {
+        font-size: 1rem;
+    }
+
+    .cardsFlex .textos {
+        font-size: 0.7rem;
+    }
+
+    .play-icon {
+        display: none;
+    }
+}
+
+.cardImg img {
+    border-radius: 0.5rem;
+}
+
+.alternativeCard h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.alternativeCard p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: black;
+}

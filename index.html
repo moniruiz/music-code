@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Music Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0983ed1e17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/stylesIndex.css">
+    <link rel="stylesheet" href="styles/styleNavFooter.css">
+    <link rel="shortcut icon" href="./resources/logo de la pag.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg pb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./resources/logo de la pag.jpg" width="auto" height="80" class="d-inline-block align-top"
+                        alt="Logo de la página">
+                </a>
+                <a class="home navbar-brand fs-3" href="./index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <form class="d-flex form-inline searchForm" role="search">
+                        <input class="form-control me-1 mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-dark btn-altbg ms-2 my-sm-0 fs-6" type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./html/suscripcion.html"><button class="button-28"
+                                    role="button">Suscríbete</button><span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/login.html"><button class="button-28" role="button">Ingresar</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-start ms-3">
+            <label  class="p-1" id="time"> </label>
+            <label class="p-1" id="date"> </label>
+        </div>
+    </header>
+    <main>
+        <!-- INICIO DEL CARRUSEL -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./resources/ban1.jpg" class="d-block w-100" alt="Banner de presentación del sitio web">
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/ban2.jpg" class="d-block w-100" alt="Banner de oferta del plan premium">
+                </div>
+                <div class="carousel-item">
+                    <img src="./resources/ban3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- FIN DEL CARRUSEL -->
+
+        <div class="containerWidth">
+            <!-- SECCION DE TARJETAS CON LA CANCION & PLAYLIST DESTACADA DEL DIA -->
+            <h2 class="mainTitle titulos">Bienvenido a Music Code!</h2>
+            <p class="mainText parrafos">Buenos dias! Arranquemos con toda este día.</p>
+            <div class="cardsFlex justify-content-center">
+                <div class="card mb-3 cardBackground rounded-pill smPadding" style="max-width: 500px;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4">
+                            <img src="https://www.udiscovermusic.com/wp-content/uploads/2022/01/The-Weeknd.jpg"
+                                class="img-fluid rounded-pill" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title titulos">CANCION RECOMENDADA DE HOY</h5>
+                                <p class="card-text parrafos">Sacrifice - The Weeknd</p>
+                                <p class="card-text parrafos smallNone"><small class="text-body-secondary">Género: Pop</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 secondCardBackground rounded-pill smPadding" style="max-width: 500px;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2db1bf84253727.5d56aace47a9c.jpg"
+                                class="img-fluid rounded-pill" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title titulos">TU PLAYLIST IDEAL PARA HOY</h5>
+                                <p class="card-text parrafos">Hits clásicos - 80s</p>
+                                <p class="card-text parrafos smallNone"><small class="text-body-secondary">Contiene 30
+                                        canciones</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN DE SECCION DE TARJETAS CON LA CANCION & PLAYLIST DESTACADA DEL DIA -->
+
+            <!-- SECCION DE GENEROS -->
+            <h2 class="mainTitle titulos">Explora tu Música: Géneros</h2>
+            <p class="mainText parrafos">Hemos preparado estos generos de música en base a tus gustos.</p>
+            <div class="container-fluid">
+                <div class="row cards justify-content-center">
+                    <a href="html/categoriaRock.html" class="alternativeCard mx-2 me-2 col-12 col-sm-4 col-lg-3 col-md-3">
+                        <div class="cardImg">
+                            <img src="./resources/rock.jpg" alt="Portada del Genero Rock" class="img-fluid">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">ROCK</h2>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="html/categoriaPop.html" class="alternativeCard mx-2 me-2 col-12 col-sm-4 col-lg-3 col-md-3">
+                        <div class="cardImg">
+                            <img src="./resources/pop.jpg" alt="Portada del Genero Pop" class="img-fluid">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">POP</h2>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./html/error404.html" class="alternativeCard mx-2 me-2 col-12 col-sm-4 col-lg-3 col-md-3">
+                        <div class="cardImg">
+                            <img src="./resources/hiphop.jpg" alt="Portada del Genero Hip-Hop" class="img-fluid">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">HIP-HOP</h2>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./html/error404.html" class="alternativeCard mx-2 me-2 col-12 col-sm-4 col-lg-3 col-md-3">
+                        <div class="cardImg">
+                            <img src="./resources/trap.jpg" alt="Portada del Genero Trap" class="img-fluid">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">TRAP</h2>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./html/error404.html" class="alternativeCard mx-2 me-2 col-12 col-sm-4 col-lg-3 col-md-3">
+                        <div class="cardImg">
+                            <img src="./resources/alternative.jpg" alt="Portada del Genero Alternativo"
+                                class="img-fluid">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">ALTERNATIVO</h2>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./html/error404.html" class="alternativeCard mx-2 me-2 col-12 col-sm-4 col-lg-3 col-md-3">
+                        <div class="cardImg">
+                            <img src="./resources/lofi.jpg" alt="Portada del Genero Lo-fi" class="img-fluid">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">LO-FI</h2>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- FIN DE SECCION DE GENEROS -->
+
+            <!-- SECCION DE ARTISTAS DESTACADOS -->
+            <h2 class="mainTitle titulos">Explora tu Música: Artistas</h2>
+            <p class="mainText parrafos">Algunos artistas recomendados en base a tus gustos.</p>
+            <div class="container-fluid">
+                <div class="row cards justify-content-center">
+                    <a href="./html/error404.html"
+                        class="alternativeCard second-background col-12 col-sm-4 col-lg-3 col-md-3 mx-2 me-2">
+                        <div class="cardImg">
+                            <img src="./resources/gnrlog.jpg" alt="Foto de Guns and Roses"
+                                class="img-fluid rounded-circle">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">GUNS N' ROSES</h2>
+                            <p class="textos">Genero: Rock</p>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=./html/error404.html
+                        class="alternativeCard second-background col-12 col-sm-4 col-lg-3 col-md-3 mx-2 me-2">
+                        <div class="cardImg">
+                            <img src="./resources/taylor.jpg" alt="Foto de Taylor Swift"
+                                class="img-fluid rounded-circle">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">TAYLOR SWIFT</h2>
+                            <p class="textos">Genero: Pop</p>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=./html/error404.html
+                        class="alternativeCard second-background col-12 col-sm-4 col-lg-3 col-md-3 mx-2 me-2">
+                        <div class="cardImg">
+                            <img src="./resources/claire.jpg" alt="Foto de Clairo" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">CLAIRO</h2>
+                            <p class="textos">Genero: Alternativo</p>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=./html/error404.html
+                        class="alternativeCard second-background col-12 col-sm-4 col-lg-3 col-md-3 mx-2 me-2">
+                        <div class="cardImg">
+                            <img src="./resources/c418.jpg" alt="Foto de C418" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">C418</h2>
+                            <p class="textos">Genero: Videogame Music</p>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=./html/error404.html
+                        class="alternativeCard second-background col-12 col-sm-4 col-lg-3 col-md-3 mx-2 me-2">
+                        <div class="cardImg">
+                            <img src="./resources/mozart.jpg" alt="Foto de Mozart" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">MOZART</h2>
+                            <p class="textos">Genero: Clasica</p>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=./html/error404.html
+                        class="alternativeCard second-background col-12 col-sm-4 col-lg-3 col-md-3 mx-2 me-2">
+                        <div class="cardImg">
+                            <img src="./resources/icecube.jpg" alt="" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="cardTexts">
+                            <h2 class="titulos">ICE CUBE</h2>
+                            <p class="textos">Genero: Hip-hop</p>
+                        </div>
+                        <div class="play-icon">
+                            <div class="circle">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-lg-around justify-content-md-around align-items-center">
+            <div class="col-lg-4 d-flex justify-content-center p-1">
+                <img src="./resources/logo de la pag.jpg" alt="Logo de la página">
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center fs-2">
+                <div><a class="link" href="./html/contacto.html">Contacto</a> </div>
+                <div><a class="link" href="./html/about.html">About</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/date.js"></script>
+    <script src="./script/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

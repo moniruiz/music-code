@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripcion | Music Code</title>
+    <script src="https://kit.fontawesome.com/0983ed1e17.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./resources/logo de la pag.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/stylesSuscripcion.css">
+    <link rel="stylesheet" href="../styles/styleNavFooter.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg pb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../resources/logo de la pag.jpg" width="auto" height="80" class="d-inline-block align-top"
+                    alt="Logo de la página">
+                </a>
+                <a class="home navbar-brand fs-3" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <form class="d-flex form-inline searchForm" role="search">
+                        <input class="form-control me-1 mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-dark btn-altbg ms-2 my-sm-0 fs-6" type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"><button class="button-28" role="button">Suscríbete</button><span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html"><button class="button-28" role="button">Ingresar</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="titulo">
+            <h1>Elige tu plan</h1>
+        </div>
+        <article class="cards-container row" >
+            <div class="card col-md-3" style="width: 18rem;">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Plan Basico</h5>
+                  <p class="card-precio">2000<sup>/mes</sup></p>
+                  <div class="card-beneficios">
+                    <ul class="list">
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            <p>Música sin anuncios</p>
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            <p>Escuchá tus canciones en cualquier lugar, incluso sin conexión</p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="cards-btn">
+                    <a href="./registro.html" class="boton-empezar ">Empezar <i class='bx bxs-right-arrow'></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="card col-md-3" style="width: 18rem;">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Plan Intermedio</h5>
+                  <p class="card-precio">3000<sup>/mes</sup></p>
+                  <div class="card-beneficios">
+                    <ul class="list">
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            <p>2 cuentas Premium </p>
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            <p>Reproducción de música en modo offline, sin anuncios y on-demand</p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="cards-btn">
+                    <a href="./registro.html" class="boton-empezar ">Empezar <i class='bx bxs-right-arrow'></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="card col-md-3" style="width: 18rem;">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Plan Premium</h5>
+                  <p class="card-precio">4000<sup>/mes</sup></p>
+                  <div class="card-beneficios">
+                    <ul class="list">
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            <p>6 cuentas Premium </p>
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            <p>Bloqueo de música con contenido explícito</p>
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            <p>Reproducción de música en modo offline, sin anuncios y on-demand</p>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="cards-btn">
+                    <a href="./registro.html" class="boton-empezar">Empezar <i class='bx bxs-right-arrow'></i></a>
+                  </div>
+                </div>
+                
+            </div>
+        </article>
+        <section class="w-75">
+          <div class="formulario">
+              <form class="row g-3" action="./error404.html" method="post">
+                  <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="" minlength="2" maxlength="35" pattern="^\s*[a-zA-Z,\s]+\s*$" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="" minlength="2" maxlength="35" pattern="^\s*[a-zA-Z,\s]+\s*$" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefaultUsername" class="form-label">E-mail</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                      <input type="email" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required minlength="10" maxlength="50">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Número de tarjeta</label>
+                    <input type="text" class="form-control" id="validationDefault03" required minlength="10" maxlength="19" pattern="^[0-9]+$">
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Tarjeta de crédito
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Tarjeta de débito
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="boton-empezar btn-primary" type="submit">Crear cuenta</button>
+                  </div>
+                </form>
+          </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="row d-flex justify-content-lg-around justify-content-md-around align-items-center">
+          <div class="col-lg-4 d-flex justify-content-center p-1">
+              <img src="../resources/logo de la pag.jpg" alt="Logo de la página">
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center fs-2">
+              <div><a class="link" href="./contacto.html">Contacto</a> </div>
+              <div><a class="link" href="./about.html">About</a></div>
+          </div>
+      </div>
+  </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

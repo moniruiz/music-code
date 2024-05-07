@@ -1,0 +1,164 @@
+/* SECCION NAVBAR */
+
+header {
+    background: var(--primary-color);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    font-family: 'Dosis';
+    font-weight: bolder;
+    z-index: 2;
+    padding-bottom: 7px;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 70px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+nav .form-control {
+    padding: 16px 24px;
+    border-radius: 15px;
+}
+
+.home:hover {
+    color: white;
+}
+
+form .btn {
+    padding: 16px 24px;
+    border-radius: 15px;
+}
+
+.button-28 {
+    appearance: none;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'dosis';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.btn-altbg {
+    background-color: black;
+    color: white;
+}
+
+.btn-altbg:hover {
+    color: black;
+    background-color: white;
+}
+
+.searchForm {
+    height: 3.9rem;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* SECCION FOOTER */
+
+footer {
+    background-color: #d05893;
+    font-family: 'Dosis';
+    font-weight: bolder;
+}
+
+footer img {
+    width: auto;
+    height: 80px;
+    border-radius: 10%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.fab {
+    font-size: 50px;
+    color: black;
+}
+
+.fab:hover {
+    color: white;
+}
+
+.link:hover {
+    color: white;
+}
+
+@media (max-width: 576px) {
+    footer img {
+        display: none;
+    }
+
+    .fab {
+        font-size: 20px;
+        color: black;
+        padding: 0;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    footer img {
+        display: none;
+    }
+
+    .fab {
+        font-size: 30px;
+        color: black;
+        padding: 0;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+    }
+
+}
+
+/* FIN SECCION FOOTER */

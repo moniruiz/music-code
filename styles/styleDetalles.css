@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dosis', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #d05893;
+    --secundary-color: #ffe8f2;
+  }
+
+body{
+    background-color: #ffe8f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main{
+  flex-grow: 1;
+  margin-bottom: 150px;
+}
+
+.banner{
+    background-color: #2a1820;
+    color: #ffe8f2;
+}
+
+.banner img {
+    border-radius: 5rem;
+}
+
+.albumsCard {
+    width: 200px;
+    height: 200px;
+
+}
+
+.artistasRelacionados a{
+    background-color: #2a1820;
+    color: #ffe8f2;
+}

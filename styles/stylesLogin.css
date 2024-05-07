@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap');
+
+:root {
+  --primary-color: #d05893;
+  --secundary-color: #ffe8f2;
+}
+
+* {
+  font-family: 'Dosis', sans-serif;
+}
+
+/*html {
+  font-size: 62.5%;
+}*/
+body {
+  background-color: #ffe8f2;
+}
+
+main{
+    margin: 60px;
+}
+.form{
+    margin-top: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 60px 5px 60px 5px;
+    padding: 20px;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0, 0.7);
+    min-width: 350px;
+    max-width: 150%;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(1rem);
+    background-color: #fff;
+}
+.form:hover{
+    box-shadow: 0 1rem 1rem rgb(245, 38, 228);
+    
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .contenedor form {
+    width: 100%;
+  }
+}
+
+h1 {
+    font-size: 35px ;
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    padding: 5px 6px;
+    margin-bottom: 10px;
+    margin-top:30px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+.input .form-control:focus{
+    outline: 0;
+}
+.input .form-control{
+    background: transparent;
+    
+}
+.input .form-control:hover{
+    border: 1px solid rgb(245, 38, 228);
+    
+}
+.button{
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    background-color: #525170;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+.button:hover{
+    background-color:var(--primary-color);
+}
+.link{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  font-weight: bolder;
+}

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap');
+
+:root {
+    --primary-color: #d05893;
+    --secundary-color: #ffe8f2;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffe8f2;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerWidth {
+    margin-top: 1rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.cardBackground {
+    background-color: #a3ffe7;
+}
+
+.secondCardBackground {
+    background-color: #ffa0cc;
+}
+
+.mainTitle {
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.mainText {
+    text-align: center;
+}
+
+.cardsFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 1150px) {
+    .cardsFlex {
+        justify-content: center;
+    }
+}
+
+.card {
+    margin: 0.2rem;
+}
+
+.titulos {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+}
+
+.parrafos {
+    font-family: 'Dosis';
+}
+
+a .titulos {
+    font-size: 2rem;
+}
+
+a .parrafos {
+    font-size: 1rem;
+}
+
+.alternativeCard {
+    position: relative;
+    background-color: #ff6eff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+}
+
+.second-background {
+    background-color: #ecc97c;
+}
+
+.cards {
+    justify-content: space-between;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(10px);
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.623));
+    filter: opacity(0);
+    transition: all 0.4s;
+}
+
+.alternativeCard:hover .play-icon {
+    filter: opacity(100);
+    transform: translateY(0);
+}
+
+.circle {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #69f7ff;
+    display: grid;
+    place-items: center;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid black;
+    transform: rotate(90deg);
+    margin-left: 0.2rem;
+}
+
+@media (max-width: 576px) {
+    .smPadding {
+        padding-right: 1rem;
+    }
+    .cardTexts .titulos {
+        font-size: 1.3rem;
+    }
+
+    .cardTexts .textos {
+        font-size: 1rem;
+    }
+
+    .cardsFlex .titulos {
+        font-size: 1rem;
+    }
+
+    .cardsFlex .textos {
+        font-size: 0.7rem;
+    }
+
+    .play-icon {
+        display: none;
+    }
+    .card-body .smallNone {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .xl-none {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px) {
+    .xl-none {
+        display: none;
+    }
+}
+
+.cardImg img {
+    border-radius: 0.5rem;
+}
+
+.alternativeCard h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.alternativeCard p {
+    font-family: 'Dosis';
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: rgb(68, 68, 68);
+}

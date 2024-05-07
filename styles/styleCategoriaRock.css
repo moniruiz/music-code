@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+:root {
+    --primary-color: #d05893;
+    --secundary-color: #ffe8f2;
+}
+
+
+.titulo{
+    font-size: 9vw;
+    font-weight: 800;
+    height: 30vw;
+    color: rgb(255, 232, 242);
+}
+
+main{
+    background-image: url(https://lh3.googleusercontent.com/09KHKfbT9CrQXLPKKhbfG3wviW5r-8n0jae3TLubt5hqtYM4epKXbIgSPzqVyhaillpdtGcdkC7VdVNM=w2660-h1108-p-l90-rj);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    font-weight: 400;
+}
+
+.card-title{
+    font-weight: 800!important;
+    font-size: 1.5em;
+}
+
+.card-text{
+    font-weight: 400!important;
+}
+
+.categoria{
+    background-color: rgb(255, 184, 217);
+    background: linear-gradient(0deg, rgb(255, 184, 217) 0%, rgba(255, 232, 242,1) 100%);
+}
+
+
+.card img{
+    border-radius: var(--bs-border-radius);
+}
+
+.card2:hover{
+    .card{
+        background-color: rgb(235, 235, 235);
+    }
+    .icono{
+        bottom: 3%;
+        right: 10%;
+        display: block;
+    }
+}
+
+.card:active{
+    .icono{
+        scale: 1.5;
+        transition: all 0.25s;
+    }
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.icono{
+    bottom: 3%;
+    right: 10%;
+    position: absolute;
+    font-size: 3vw!important;
+    display: none;
+    animation: playButton 0.20s linear 0s 1;
+}
+
+.icono:hover{
+    cursor: pointer;
+    scale: 1.15;
+}
+
+.carouselControl{
+    width: auto!important;
+    background-color: rgba(80, 39, 58, 0.089)!important;
+    border-radius: .25em;
+}
+
+.fa-lg{
+    font-size: 2vw;
+}
+
+.offcanvas{
+    background-color: #ffb8d9;
+}
+
+@keyframes playButton {
+    from{
+        bottom: 1%;
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@media (width <= 768px) {
+    .icono{
+        font-size: 6vw!important;
+        display: block;
+    }
+    .fa-lg{
+        font-size: 5vw;
+    }
+}
+
+@media (768px < width <= 992px) {
+    .icono{
+        font-size: 5vw!important;
+        display: block;
+    }
+    .fa-lg{
+        font-size: 3vw;
+    }
+}
